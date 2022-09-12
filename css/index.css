@@ -1,0 +1,19 @@
+.center{
+    align-content: center;
+    justify-content: center;
+}
+body{
+    background-color: #efefef;
+}
+.header{
+    background: #fff;
+}
+
+.buttonsize{
+    width: 90%;
+    padding:50px 0;
+}
+
+.buttontekst{
+    text-align: center;
+}
