@@ -1,12 +1,10 @@
-<?php
+<?php   // toegang resetten
 require('../php/db.php');
 $day = date('D');
 $hour = date('H');
-if($day = 'sun' && $hour == 24){
-$sporterID = $_POST['sporterID'];
+if($day == 'Sun' && $hour == 11){
 $sql = "UPDATE sporter SET total_access=?";
 $stmt= $pdo->prepare($sql);
 $stmt->execute([4]);
 }
-
 ?>

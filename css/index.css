@@ -1,19 +1,24 @@
-.center{
-    align-content: center;
-    justify-content: center;
+.center {
+  /* text in het midden van de header zetten */
+  align-content: center;
+  justify-content: center;
 }
-body{
-    background-color: #efefef;
+body {
+  /* achtergrond van de pagina */
+  background-color: #efefef;
 }
-.header{
-    background: #fff;
-}
-
-.buttonsize{
-    width: 90%;
-    padding:50px 0;
+.header {
+  /* achtergrond van de header */
+  background: #fff;
 }
 
-.buttontekst{
-    text-align: center;
+.buttonsize {
+  /* knop breedte en hoogte */
+  width: 90%;
+  padding: 50px 0;
+}
+
+.buttontekst {
+  /* knop tekst in het midden zetten van de knop */
+  text-align: center;
 }

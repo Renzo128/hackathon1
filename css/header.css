@@ -1,51 +1,45 @@
-.indexPage{
-    text-align: start;
-    margin-left: 5px;
-    position: absolute;
-    left: 15;
-    top: 39px;
-}
-.content{
-    display: flex;
-    align-items: center;
-    width: 53.6%;
-    justify-content: space-between;
+.indexPage {
+  /* plaatsing van de terug knop in de header */
+  text-align: start;
+  margin-left: 5px;
+  position: absolute;
+  left: 15;
+  top: 39px;
 }
 
-.url{
-    color: #000000;
-    text-decoration: none;
+.url {
+  /* kleur van de terug knop aanpassen */
+  color: #000000;
+  text-decoration: none;
 }
 
-a:hover{
-    color: #000000;
-    text-decoration: none;
+a:hover {
+  /* hover kleur van de terug knop aanpassen  */
+  color: #000000;
+  text-decoration: none;
 }
 
-.center{
-    align-content: center;
-    justify-content: center;
+.center {
+  /* bedrijfsnaam in het midden van de header zdetten */
+  align-content: center;
+  justify-content: center;
 }
-body{
-    background-color: #efefef;
+body {
+  /* achtergrond van de pagina */
+  background-color: #efefef;
 }
-.header{
-    background: #fff;
-}
-
-.buttonsize{
-    width: 90%;
-    padding:50px 0;
+.header {
+  /* achtergrond van de header */
+  background: #fff;
 }
 
-.buttontekst{
-    text-align: center;
+.buttonsize {
+  /* knop breedte en hoogte */
+  width: 90%;
+  padding: 50px 0;
 }
 
-.moveReturn{
-    margin-left:15px;
-}
-.reset{
-    padding: 0;
-    margin: 0;
+.buttontekst {
+  /* knop tekst in het midden van de knop zetten */
+  text-align: center;
 }

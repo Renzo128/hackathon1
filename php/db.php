@@ -1,4 +1,4 @@
-<?php
+<?php // database connectie
 $host = '127.0.0.1';
 $db   = 'hackathon1';
 $user = 'root';

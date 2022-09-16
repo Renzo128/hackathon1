@@ -1,6 +1,6 @@
 <?php
-require('../php/db.php');
-require('../header/header.php');
+require('../php/db.php');   // database connectie
+require('../header/header.php');    // pagina header
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -17,8 +17,8 @@ require('../header/header.php');
 <body>
     <?php
     $coachData = "";
-    $data = $pdo->query("SELECT * FROM personal_coach")->fetchAll();
-    foreach ($data as $row) {
+    $data = $pdo->query("SELECT * FROM personal_coach")->fetchAll(); // alle persoonlijke coaches ophalen
+    foreach ($data as $row) {   // alle persoonlijke coaches op de pagina inladen
         $coachData .= "<div class='row pt-3 h-25'>";
         $coachData .= "<div class='col-1'></div>";
         $coachData .= "<div class='col-10 border border-dark'>";
@@ -27,7 +27,7 @@ require('../header/header.php');
         $coachData .= $row['personal_coaches'];
         $coachData .= "</div>";
         $coachData .= "<div class='col-4 text-right apply'>";
-        $coachData .= "<button id=" . $row['id'] . " onclick='applyForCoach(this.id," . $_COOKIE['sporterID'] . ")' type='button'>Aanmelden</button";
+        $coachData .= "<button class='btn btn-primary' id=" . $row['id'] . " onclick='applyForCoach(this.id," . $_COOKIE['sporterID'] . ")' type='button'>Aanmelden</button";
         $coachData .= "</div>";
         $coachData .= "</div>";
         $coachData .= "<div class='col-1'></div>";

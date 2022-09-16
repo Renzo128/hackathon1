@@ -1,7 +1,7 @@
 <?php
-require('../header/header.php');
-require('../php/db.php');
-$data = $pdo->query("SELECT * FROM sporter where id=1")->fetch();
+require('../header/header.php');    // pagina header
+require('../php/db.php');   // database connectie
+$data = $pdo->query("SELECT * FROM sporter where id=1")->fetch();   // abonnement ophalen
 $subscription = $data['total_access'];
 ?>
 <!DOCTYPE html>
@@ -24,12 +24,12 @@ $subscription = $data['total_access'];
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-12 text-center mt-5">
-                Abbonement: <?php echo $subscription; ?>
+            <div id="subscription" class="col-lg-12 text-center mt-5">
+                Abbonement: <?php echo $subscription; ?>    <!-- aantal keer toegang -->
             </div>
         </div>
         <div class="row justify-content-center mt-3 ">
-            <button onclick="cancelSubscription(<?php echo $data['id'] ?>)" class="btn btn-primary buttonsize" type="button">Annuleren</button>
+            <button onclick="cancelSubscription(<?php echo $data['id'] ?>)" class="btn btn-primary buttonsize" type="button">Annuleren</button> <!-- abonnement annuleren -->
         </div>
     </div>
 </body>
