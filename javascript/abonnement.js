@@ -5,7 +5,7 @@ const cancelSubscription = (id) => {
     url: "../php/privateSubscription.php",
     data: { sporterID: id },
     success: function (response) {
-    document.getElementById('subscription').innerHTML = 'Abbonement: 0';
+    document.getElementById('subscription').innerHTML = 'Abonnement: 0';
 
     window.alert("Je abonnement is geannuleerd.");
     },

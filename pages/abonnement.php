@@ -25,7 +25,7 @@ $subscription = $data['total_access'];
         </div>
         <div class="row">
             <div id="subscription" class="col-lg-12 text-center mt-5">
-                Abbonement: <?php echo $subscription; ?>    <!-- aantal keer toegang -->
+                Abonnement: <?php echo $subscription; ?>    <!-- aantal keer toegang -->
             </div>
         </div>
         <div class="row justify-content-center mt-3 ">
